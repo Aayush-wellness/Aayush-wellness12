@@ -68,7 +68,7 @@ function HeroSection() {
 
             <div className="TextMedia_mediaWrapper__e1HP_ style-POjkF" id="style-POjkF">
               {/* Instagram Feed */}
-            <div class="elfsight-app-c3a5dbb4-1648-42d0-a8bf-48a5ab757951" data-elfsight-app-lazy></div>
+       <div class="elfsight-app-afef5f92-d00d-4c63-8c73-7f9015ccc1cf" data-elfsight-app-lazy></div>
             </div>
           </div>
         </div>
