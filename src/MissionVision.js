@@ -1,7 +1,5 @@
 import { useEffect, useState, useRef } from "react"
-import Hls from "hls.js"
 import NewFooter from "./NewFooter"
-import SkeletonLoader from "./SkeletonLoader"
 import MissionHeader from "./MissionHeader"
 import { Helmet } from 'react-helmet';
 import { motion } from 'framer-motion';
@@ -55,8 +53,8 @@ function MissionVision() {
 
 
   // Video URLs
-  const DESKTOP_VIDEO_URL = "https://res.cloudinary.com/ddoz8ya3l/video/upload/v1757483396/ur6urwkotb4kl7r4twfq_c1ysar.m3u8"
-  const MOBILE_VIDEO_URL = "https://res.cloudinary.com/ddoz8ya3l/video/upload/v1757483416/eb4kqbvu48fawrrfixap_n648jh.m3u8"
+  const DESKTOP_VIDEO_URL = "https://res.cloudinary.com/dhofjux9o/video/upload/v1762842989/ur6urwkotb4kl7r4twfq_c4y2f9.mp4"
+  const MOBILE_VIDEO_URL = "https://res.cloudinary.com/dhofjux9o/video/upload/v1762843006/eb4kqbvu48fawrrfixap_c1yhw5.mp4"
 
   useEffect(() => {
     setTimeout(() => {
@@ -65,25 +63,24 @@ function MissionVision() {
   }, [])
 
   useEffect(() => {
-    if (!loading && Hls.isSupported()) {
+    if (!loading) {
+      // Direct MP4 loading - no HLS needed
       if (desktopVideoRef.current) {
-        const hlsDesktop = new Hls()
-        hlsDesktop.loadSource(DESKTOP_VIDEO_URL)
-        hlsDesktop.attachMedia(desktopVideoRef.current)
+        desktopVideoRef.current.src = DESKTOP_VIDEO_URL
+        desktopVideoRef.current.load()
       }
 
       if (mobileVideoRef.current) {
-        const hlsMobile = new Hls()
-        hlsMobile.loadSource(MOBILE_VIDEO_URL)
-        hlsMobile.attachMedia(mobileVideoRef.current)
+        mobileVideoRef.current.src = MOBILE_VIDEO_URL
+        mobileVideoRef.current.load()
       }
     }
   }, [loading])
 
   const sectionVariants = {
     hidden: { opacity: 0, y: 20 },
-    visible: { 
-      opacity: 1, 
+    visible: {
+      opacity: 1,
       y: 0,
       transition: { duration: 0.6 }
     }
@@ -188,22 +185,22 @@ function MissionVision() {
       ),
       reverse: true
     },
-   
+
   ];
 
   return (
     <>
       <Helmet>
         <title>Aayush Wellness - Our Mission & Vision for Healthier Lives</title>
-        <meta 
-          name="description" 
-          content="Discover Aayush Wellness' mission to transform healthcare through Ayurveda and modern science. Learn about our vision for holistic wellness and sustainable health solutions." 
+        <meta
+          name="description"
+          content="Discover Aayush Wellness' mission to transform healthcare through Ayurveda and modern science. Learn about our vision for holistic wellness and sustainable health solutions."
         />
         <script type="application/ld+json">
           {JSON.stringify(schemaData)}
         </script>
       </Helmet>
-      
+
       {/* Hidden SEO Headers */}
       <h1 style={{ display: 'none' }}>Aayush Wellness - Our Mission & Vision for Healthier Lives</h1>
       <h2 style={{ display: 'none' }}>Transforming healthcare through Ayurveda and modern science</h2>
@@ -212,7 +209,7 @@ function MissionVision() {
         <MissionHeader />
 
 
-        
+
         {/* Hero Section with Video Background */}
         <div className="relative h-screen w-full overflow-hidden">
           {/* Video Background */}
@@ -235,10 +232,10 @@ function MissionVision() {
             />
             <div className="absolute inset-0 bg-black/50 z-10"></div>
           </div>
-          
+
           {/* Hero Content */}
           <div className="relative z-20 h-full flex flex-col justify-center px-4 md:px-12 lg:px-24 text-white">
-            <motion.div 
+            <motion.div
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.3 }}
@@ -258,18 +255,17 @@ function MissionVision() {
                       document.getElementById(item.id)?.scrollIntoView({ behavior: 'smooth' });
                       setActiveSection(item.id);
                     }}
-                    className={`px-4 py-2 rounded-full transition-all duration-300 ${
-                      activeSection === item.id 
-                        ? 'bg-[#33cccc] text-white' 
+                    className={`px-4 py-2 rounded-full transition-all duration-300 ${activeSection === item.id
+                        ? 'bg-[#33cccc] text-white'
                         : 'bg-white/10 text-white hover:bg-white/20'
-                    }`}
+                      }`}
                   >
                     {item.label}
                   </button>
                 ))}
               </div>
             </motion.div>
-            
+
             {/* Scroll Indicator */}
             <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-30">
               <div className="animate-bounce flex flex-col items-center">
@@ -282,7 +278,7 @@ function MissionVision() {
           </div>
         </div>
 
-    
+
         {/* Content Sections */}
         {sections.map((section, index) => (
           <motion.section
@@ -295,22 +291,22 @@ function MissionVision() {
           >
             {/* Decorative Background */}
             <div className="absolute inset-0 bg-gradient-to-b from-gray-50 to-white -z-10"></div>
-            
+
             {/* Black heading section with gradient overlay */}
             <div className="relative bg-[#1f2937] text-white py-16 overflow-hidden">
               <div className="absolute inset-0 opacity-10">
                 <div className="absolute inset-0 bg-gradient-to-r from-primary/20 to-transparent"></div>
               </div>
-              
+
               <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
-                <motion.div 
+                <motion.div
                   initial={{ y: 30, opacity: 0 }}
                   whileInView={{ y: 0, opacity: 1 }}
                   viewport={{ once: true }}
                   transition={{ duration: 0.6 }}
                   className="text-center"
                 >
-                  <motion.span 
+                  <motion.span
                     initial={{ scale: 0.8, opacity: 0 }}
                     whileInView={{ scale: 1, opacity: 1 }}
                     viewport={{ once: true }}
@@ -324,12 +320,12 @@ function MissionVision() {
                 </motion.div>
               </div>
             </div>
-            
+
             {/* Content with image */}
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
               <div className={`flex flex-col ${section.reverse ? 'lg:flex-row-reverse' : 'lg:flex-row'} gap-12 items-center`}>
                 {/* Image side */}
-                <motion.div 
+                <motion.div
                   initial={{ opacity: 0, x: section.reverse ? 50 : -50 }}
                   whileInView={{ opacity: 1, x: 0 }}
                   viewport={{ once: true }}
@@ -337,17 +333,17 @@ function MissionVision() {
                   className="lg:w-1/2"
                 >
                   <div className="relative rounded-2xl overflow-hidden shadow-2xl group">
-                    <img 
-                      src={section.image} 
+                    <img
+                      src={section.image}
                       alt={section.title}
                       className="w-full h-[400px] lg:h-[500px] object-cover transform group-hover:scale-105 transition-transform duration-700"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent"></div>
                   </div>
                 </motion.div>
-                
+
                 {/* Content side */}
-                <motion.div 
+                <motion.div
                   initial={{ opacity: 0, x: section.reverse ? -50 : 50 }}
                   whileInView={{ opacity: 1, x: 0 }}
                   viewport={{ once: true }}
@@ -370,7 +366,7 @@ function MissionVision() {
           </motion.section>
         ))}
 
-      
+
       </div>
 
       <NewFooter />

@@ -152,7 +152,6 @@ export default function AayushVenture() {
     autoplaySpeed: 5000,
     arrows: false,
     pauseOnHover: false,
-    beforeChange: (_, next) => setCurrentSlide(next),
   };
 
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -164,6 +163,14 @@ export default function AayushVenture() {
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
+  };
+
+  const handleDropdownLinkClick = () => {
+    setIsAboutUsDropdownOpen(false);
+    setIsCorporateDropdownOpen(false);
+    setIsCsrSubcategoryOpen(false);
+    setIsSearchOpen(false);
+    setIsMenuOpen(false);
   };
 
 

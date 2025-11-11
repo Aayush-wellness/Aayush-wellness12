@@ -2,7 +2,6 @@ import React, { useEffect, useState, useRef } from "react";
 import NewFooter from "./NewFooter";
 import SkeletonLoader from "./SkeletonLoader";
 import MissionHeader from "./MissionHeader";
-import Hls from "hls.js";
 import { db } from "./firebase";
 import { collection, getDocs, query, orderBy } from "firebase/firestore";
 
@@ -242,17 +241,17 @@ const pressReleases = [
     year: 2025,
     type: "Announcement",
     body: pressReleaseBody2,
-    
+
   },
   {
-  id: 3,
-  name: "Aayush Wellness Limited to Establish Wholly Owned Subsidiary in Singapore to Accelerate Southeast Asia Expansion",
-  url: "https://cdn.shopify.com/s/files/1/0636/5226/6115/files/June_09.25.pdf?v=1752210981", 
-  date: "2025-06-09",
-  year: 2025,
-  type: "Announcement",
-  body: pressReleaseBody3,
-},
+    id: 3,
+    name: "Aayush Wellness Limited to Establish Wholly Owned Subsidiary in Singapore to Accelerate Southeast Asia Expansion",
+    url: "https://cdn.shopify.com/s/files/1/0636/5226/6115/files/June_09.25.pdf?v=1752210981",
+    date: "2025-06-09",
+    year: 2025,
+    type: "Announcement",
+    body: pressReleaseBody3,
+  },
 ];
 
 function formatDate(dateStr) {
@@ -262,7 +261,7 @@ function formatDate(dateStr) {
       month: "short",
       day: "numeric",
       year: "numeric",
-     
+
     })
   );
 }
@@ -336,7 +335,7 @@ function PressReleaseSection() {
           <div className={`md:w-1/3 border-r border-gray-100 bg-gradient-to-b from-white to-gray-50 p-6 ${isMobile && selected ? 'hidden' : 'block'}`}>
             <div className="sticky top-6">
               <h2 className="text-2xl font-bold text-gray-800 mb-6 font-rogbold">Press Releases</h2>
-              
+
               {/* Search Box */}
               <div className="mb-6 relative">
                 <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
@@ -375,7 +374,7 @@ function PressReleaseSection() {
                     </div>
                   </div>
                 </div>
-                
+
                 <div>
                   <label className="block text-sm font-medium text-gray-700 mb-1.5">Category</label>
                   <div className="relative">
@@ -414,11 +413,10 @@ function PressReleaseSection() {
                       <button
                         key={pr.id}
                         onClick={() => setSelected(pr)}
-                        className={`w-full text-left p-5 rounded-xl transition-all duration-200 ${
-                          selected?.id === pr.id 
-                            ? 'bg-gradient-to-r from-gray-50 to-white border-l-4 border-[#33cccc] shadow-sm' 
+                        className={`w-full text-left p-5 rounded-xl transition-all duration-200 ${selected?.id === pr.id
+                            ? 'bg-gradient-to-r from-gray-50 to-white border-l-4 border-[#33cccc] shadow-sm'
                             : 'bg-white hover:bg-gray-50 border-l-4 border-transparent hover:border-gray-200 shadow-sm hover:shadow-md'
-                        }`}
+                          }`}
                       >
                         <div className="flex items-center justify-between">
                           <span className="text-sm font-medium px-3 py-1 rounded-full bg-[#33cccc] bg-opacity-10 text-[#33cccc]">
@@ -426,9 +424,8 @@ function PressReleaseSection() {
                           </span>
                           <span className="text-sm text-gray-700">{formatDate(pr.date)}</span>
                         </div>
-                        <h4 className={`mt-3 text-base md:text-lg font-medium ${
-                          selected?.id === pr.id ? 'text-[#13233b]' : 'text-[#13233b]'
-                        }`}>
+                        <h4 className={`mt-3 text-base md:text-lg font-medium ${selected?.id === pr.id ? 'text-[#13233b]' : 'text-[#13233b]'
+                          }`}>
                           {pr.name}
                         </h4>
                       </button>
@@ -464,12 +461,12 @@ function PressReleaseSection() {
                       </span>
                       <span className="text-sm md:text-base text-gray-700">{formatDate(selected.date)}</span>
                     </div>
-                    
+
                     <h1 className="md:text-3xl font-bold text-[#13233b] mb-8 leading-snug">
                       {selected.name}
                     </h1>
 
-                    <div 
+                    <div
                       className="prose prose-lg max-w-none text-black leading-relaxed"
                       style={{
                         fontSize: '1.125rem',
@@ -478,7 +475,7 @@ function PressReleaseSection() {
                         '--tw-prose-headings': '#13233b',
                         '--tw-prose-headings-font-family': 'ROGBold, sans-serif',
                         '--tw-prose-headings-font-weight': 'bold',
-                        '--tw-prose-h1-font-size': '2.25em', 
+                        '--tw-prose-h1-font-size': '2.25em',
                         '--tw-prose-h2-font-size': '1.65em',
                         '--tw-prose-h3-font-size': '1.4em',
                         '--tw-prose-h4-font-size': '1.2em',
@@ -557,25 +554,24 @@ function PressReleases() {
   const mobileVideoRef = useRef(null);
 
   const DESKTOP_VIDEO_URL =
-    "https://res.cloudinary.com/dcs4uo7ub/video/upload/v1754118981/ur6urwkotb4kl7r4twfq_ypalyr.m3u8";
+    "https://res.cloudinary.com/dhofjux9o/video/upload/v1762842989/ur6urwkotb4kl7r4twfq_c4y2f9.mp4";
   const MOBILE_VIDEO_URL =
-    "https://res.cloudinary.com/dcs4uo7ub/video/upload/v1754118984/eb4kqbvu48fawrrfixap_th2naf.m3u8";
+    "https://res.cloudinary.com/dhofjux9o/video/upload/v1762843006/eb4kqbvu48fawrrfixap_c1yhw5.mp4";
 
   useEffect(() => {
     setTimeout(() => setLoading(false), 200);
   }, []);
 
   useEffect(() => {
-    if (!loading && Hls.isSupported()) {
+    if (!loading) {
+      // Direct MP4 loading - no HLS needed
       if (desktopVideoRef.current) {
-        const hlsDesktop = new Hls();
-        hlsDesktop.loadSource(DESKTOP_VIDEO_URL);
-        hlsDesktop.attachMedia(desktopVideoRef.current);
+        desktopVideoRef.current.src = DESKTOP_VIDEO_URL;
+        desktopVideoRef.current.load();
       }
       if (mobileVideoRef.current) {
-        const hlsMobile = new Hls();
-        hlsMobile.loadSource(MOBILE_VIDEO_URL);
-        hlsMobile.attachMedia(mobileVideoRef.current);
+        mobileVideoRef.current.src = MOBILE_VIDEO_URL;
+        mobileVideoRef.current.load();
       }
     }
   }, [loading]);
