@@ -1,0 +1,707 @@
+/* Malnutrition Page Styles */
+:root {
+  --primary-color: #0eff85;
+  --secondary-color: #33cccc;
+  --dark-text: #333333;
+  --light-text: #ffffff;
+  --gray-bg: #f8f9fa;
+  --card-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  --transition: all 0.3s ease;
+}
+
+.malnutrition-page {
+  font-family: 'ROGBold';
+  color: var(--dark-text);
+  line-height: 1.6;
+  font-size: 16px; /* Base font size */
+}
+
+/* Hero Section */
+.hero-image {
+  max-height: 600px;
+  object-fit: cover;
+  object-position: center;
+  margin-top: 100px;
+}
+
+/* Section Headers */
+section h2 {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 2rem;
+  color: var(--dark-text);
+}
+
+/* Card Styles */
+.bg-white {
+  transition: var(--transition);
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: var(--card-shadow);
+}
+
+.bg-white:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Button Styles */
+button {
+  transition: var(--transition);
+  position: relative;
+  overflow: hidden;
+
+  color: var(--dark-text);
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+
+/* Section Headers */
+section h2::after {
+  content: '';
+  display: block;
+  width: 80px;
+  height: 4px;
+  background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+  margin: 10px auto 0;
+  border-radius: 2px;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--primary-color);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--secondary-color);
+}
+
+/* Accessibility Focus Styles */
+a:focus, button:focus, [tabindex="0"]:focus {
+  outline: 3px solid var(--secondary-color);
+  outline-offset: 2px;
+}
+
+/* Loading Animation */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.malnutrition-page {
+  animation: fadeIn 0.5s ease-out;
+}
+
+/* Card Hover Effects */
+.rounded-lg {
+  transition: var(--transition);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.rounded-lg:hover {
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+/* Responsive Spacing */
+@media (min-width: 1024px) {
+  .py-16 {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+  
+  .py-12 {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+}
+
+/* Custom Underline Animation */
+.underline-animation {
+  position: relative;
+  display: inline-block;
+}
+
+.underline-animation::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -2px;
+  left: 0;
+  background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+  transition: width 0.3s ease;
+}
+
+.underline-animation:hover::after {
+  width: 100%;
+}
+
+/* Section Backgrounds */
+.bg-green-700 {
+  background-color: var(--secondary-color);
+}
+
+.bg-gray-50 {
+  background-color: var(--gray-bg);
+}
+
+/* Text Colors */
+.text-green-600 {
+  color: var(--primary-color);
+}
+
+/* Responsive Typography */
+@media (max-width: 768px) {
+  .hero-image {
+    height: 300px;
+  }
+  
+  h1 {
+    font-size: 2rem !important;
+  }
+  
+  h2 {
+    font-size: 1.75rem !important;
+  }
+  
+  h3 {
+    font-size: 1.5rem !important;
+  }
+}
+
+/* ======================================= */
+/* ENHANCED MOBILE RESPONSIVE STYLES */
+/* ======================================= */
+
+/* Small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  /* Base layout adjustments */
+  .malnutrition-page {
+    overflow-x: hidden;
+    font-size: 15px; /* Slightly smaller for mobile */
+  }
+  
+  /* Header and navigation */
+  header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  /* Hero section */
+  .hero-section {
+    margin-top: 60px;
+  }
+  
+  .hero-image {
+    height: 200px;
+    margin-top: 0;
+  }
+  
+  /* Content containers */
+  .container {
+    padding: 0 15px;
+    width: 100%;
+  }
+  
+  /* Typography */
+  h1 {
+    font-size: 1.8rem !important; /* ~28.8px */
+    line-height: 1.2;
+    margin-bottom: 1rem;
+  }
+  
+  h2 {
+    font-size: 1.5rem !important; /* ~24px */
+    margin-bottom: 0.8rem;
+  }
+  
+  h3 {
+    font-size: 1.3rem !important; /* ~20.8px */
+    margin-bottom: 0.7rem;
+  }
+  
+  p {
+    font-size: 1rem; /* 16px */
+    line-height: 1.6;
+    margin-bottom: 1rem;
+  }
+  
+  .card-title {
+    font-size: 1.1rem !important; /* ~17.6px */
+    line-height: 1.3;
+  }
+  
+  .card-text {
+    font-size: 0.95rem; /* ~15.2px */
+    line-height: 1.5;
+    -webkit-line-clamp: 3;
+  }
+  
+  .btn {
+    font-size: 0.95rem !important;
+  }
+  
+  /* Cards and content blocks */
+  .card {
+    margin-bottom: 20px;
+    width: 100%;
+  }
+  
+  /* Buttons */
+  .btn {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+  }
+  
+  /* Forms */
+  input[type="text"],
+  input[type="email"],
+  textarea,
+  select {
+    width: 100% !important;
+    box-sizing: border-box;
+  }
+  
+  /* Grid adjustments */
+  .row {
+    margin-left: -8px;
+    margin-right: -8px;
+  }
+  
+  [class*="col-"] {
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+  
+  /* Utility classes */
+  .mobile-hidden {
+    display: none !important;
+  }
+  
+  .mobile-full-width {
+    width: 100% !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+  
+  /* Image adjustments */
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* Spacing utilities */
+  .mobile-mt-20 {
+    margin-top: 20px !important;
+  }
+  
+  .mobile-mb-20 {
+    margin-bottom: 20px !important;
+  }
+  
+  /* Navigation */
+  .desktop-nav {
+    display: none;
+  }
+  
+  .mobile-nav {
+    display: block;
+  }
+  
+ 
+  
+ 
+  
+  /* Card adjustments for mobile */
+  .card {
+    margin-bottom: 15px;
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  
+  .card-img-top {
+    height: 120px; /* Reduced from default */
+    object-fit: cover;
+  }
+  
+  .card-body {
+    padding: 12px;
+  }
+  
+  .card-title {
+    font-size: 16px !important;
+    margin-bottom: 6px;
+    line-height: 1.3;
+  }
+  
+  .card-text {
+    font-size: 13px;
+    margin-bottom: 10px;
+    line-height: 1.4;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  
+  .card .btn {
+    padding: 6px 12px;
+    font-size: 13px;
+    margin: 5px 0 0;
+  }
+  
+  /* Grid adjustments for cards */
+  .row-cols-1 > * {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  
+  /* If you have card decks or groups */
+  .card-deck {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .card-deck .card {
+    margin-bottom: 15px;
+  }
+  
+  /* If you have card columns */
+  .card-columns {
+    column-count: 1 !important;
+  }
+}
+
+/* Medium devices (tablets, 601px to 768px) */
+@media only screen and (min-width: 601px) and (max-width: 768px) {
+  .card {
+    margin-bottom: 20px;
+  }
+  
+  .card-img-top {
+    height: 140px;
+  }
+  
+  .card-title {
+    font-size: 17px !important;
+  }
+  
+  .card-text {
+    font-size: 14px;
+  }
+  
+  /* Adjust card grid for medium screens */
+  .row-cols-md-2 > * {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+}
+
+/* Large mobile devices (landscape) */
+@media only screen and (max-width: 768px) and (orientation: landscape) {
+  .hero-image {
+    height: 250px;
+  }
+  
+  .mobile-landscape-hidden {
+    display: none !important;
+  }
+}
+
+/* Print styles */
+@media print {
+  .no-print {
+    display: none !important;
+  }
+  
+  body {
+    font-size: 12pt;
+    line-height: 1.3;
+  }
+  
+  .container {
+    width: 100%;
+    max-width: 100%;
+    padding: 0 1cm;
+  }
+}
+
+/* ======================================= */
+/* MOBILE RESPONSIVE STYLES (ADDED) */
+/* ======================================= */
+
+/* Base mobile styles */
+@media screen and (max-width: 767px) {
+  .malnutrition-page {
+    overflow-x: hidden;
+  }
+  
+  /* Hero section adjustments */
+  .hero-image {
+    margin-top: 70px;
+    max-height: 300px;
+    width: 100%;
+  }
+  
+  /* Container padding */
+  .container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  
+  /* Card adjustments */
+  .card {
+    margin-bottom: 20px;
+    width: 100%;
+  }
+  
+  /* Typography adjustments */
+  h1 {
+    font-size: 1.8rem !important;
+    line-height: 1.2;
+  }
+  
+  h2 {
+    font-size: 1.5rem !important;
+  }
+  
+  /* Button adjustments */
+  .btn {
+    width: 100%;
+    padding: 10px 15px;
+    font-size: 0.9rem;
+  }
+  
+  /* Section spacing */
+  section {
+    padding: 2rem 0;
+  }
+  
+  /* Grid adjustments */
+  .row {
+    margin-left: -10px;
+    margin-right: -10px;
+  }
+  
+  .col-md-6, .col-lg-4 {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  
+  /* Form elements */
+  input, textarea, select {
+    width: 100% !important;
+  }
+  
+  /* Utility classes */
+  .text-center-mobile {
+    text-align: center !important;
+  }
+  
+  .hide-on-mobile {
+    display: none !important;
+  }
+}
+
+/* Tablet styles (768px and up) */
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .hero-image {
+    margin-top: 80px;
+    max-height: 400px;
+  }
+  
+  .col-md-6 {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+}
+
+/* Large mobile devices (landscape) */
+@media screen and (max-width: 991px) and (orientation: landscape) {
+  .hero-image {
+    max-height: 250px;
+  }
+}
+
+/* Base font size for all devices */
+.malnutrition-page {
+  font-size: 16px; /* Base font size */
+  line-height: 1.6;
+}
+
+/* Small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .malnutrition-page {
+    font-size: 15px; /* Slightly smaller for mobile */
+  }
+  
+  h1 {
+    font-size: 1.8rem !important; /* ~28.8px */
+    line-height: 1.2;
+    margin-bottom: 1rem;
+  }
+  
+  h2 {
+    font-size: 1.9rem !important; /* ~24px */
+    margin-bottom: 0.8rem;
+  }
+  
+  h3 {
+    font-size: 1.4rem !important; /* ~20.8px */
+    margin-bottom: 0.7rem;
+    letter-spacing: 0.3px;
+
+  }
+  
+  p {
+    font-size: 1.20rem;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+    width: 300px;
+  }
+  
+  .card-title {
+    font-size: 1.1rem !important; /* ~17.6px */
+    line-height: 1.3;
+  }
+  
+  .card-text {
+    font-size: 0.95rem; /* ~15.2px */
+    line-height: 1.5;
+    -webkit-line-clamp: 3;
+  }
+  
+  .btn {
+    font-size: 0.95rem !important;
+  }
+}
+
+/* Medium devices (tablets, 601px to 992px) */
+@media only screen and (min-width: 601px) and (max-width: 992px) {
+  .malnutrition-page {
+    font-size: 16px;
+  }
+  
+  h1 {
+    font-size: 2.2rem !important; /* ~35.2px */
+  }
+  
+  h2 {
+    font-size: 1.8rem !important; /* ~28.8px */
+  }
+  
+  h3 {
+    font-size: 1.5rem !important; /* ~24px */
+  }
+  
+  .card-title {
+    font-size: 1.2rem !important; /* ~19.2px */
+  }
+  
+  .card-text {
+    font-size: 1rem; /* 16px */
+  }
+}
+
+/* Large devices (desktops, 993px and up) */
+@media only screen and (min-width: 993px) {
+  .malnutrition-page {
+    font-size: 17px;
+  }
+  
+  h1 {
+    font-size: 2.5rem !important; /* ~40px */
+  }
+  
+  h2 {
+    font-size: 2.6rem !important; /* ~32px */
+  }
+  
+  h3 {
+    font-size: 1.7rem !important; /* ~27.2px */
+  }
+  
+  .card-title {
+    font-size: 1.3rem !important; /* ~20.8px */
+  }
+  
+  .card-text {
+    font-size: 1.05rem; /* ~16.8px */
+  }
+}
+
+/* ======================================= */
+/* RESPONSIVE UTILITY CLASSES */
+/* ======================================= */
+
+/* Text Center Utilities */
+.text-center {
+  text-align: center !important;
+}
+
+/* Margin Bottom Utilities */
+.mb-12 {
+  margin-bottom: 3rem !important; /* 48px */
+}
+
+/* Small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .text-center-sm {
+    text-align: center !important;
+  }
+  
+  .mb-12-sm {
+    margin-bottom: 2rem !important; /* 32px */
+  }
+}
+
+/* Medium devices (tablets, 601px to 992px) */
+@media only screen and (min-width: 601px) and (max-width: 992px) {
+  .text-center-md {
+    text-align: center !important;
+  }
+  
+  .mb-12-md {
+    margin-bottom: 2.5rem !important; /* 40px */
+  }
+}
+
+/* Large devices (desktops, 993px and up) */
+@media only screen and (min-width: 993px) {
+  .text-center-lg {
+    text-align: center !important;
+  }
+  
+  .mb-12-lg {
+    margin-bottom: 3rem !important; /* 48px */
+  }
+}
+
+/* Print styles */
+@media print {
+  .text-center-print {
+    text-align: center !important;
+  }
+  
+  .mb-12-print {
+    margin-bottom: 3rem !important;
+  }
+}

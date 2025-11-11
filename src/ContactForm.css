@@ -1,0 +1,223 @@
+/* Contact Section */
+.contact-section {
+  width: 100%;
+  padding: 80px 20px;
+  background: linear-gradient(135deg, #e0f7fa, #ffffff);
+  box-sizing: border-box;
+  font-family: "ROGBold";
+  color: #222;
+}
+
+/* Container */
+.contact-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 2.5fr 1.5fr;
+  gap: 60px;
+  align-items: stretch;
+}
+
+/* Form Box */
+.form-box {
+  /* background: #ffffff; */
+  padding: 45px 50px;
+  border-radius: 20px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+.form-box:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.15);
+}
+
+.form-box h2 {
+  font-size: 30px;
+  margin-bottom: 30px;
+  font-weight: 800;
+  color: #00796b;
+  position: relative;
+  letter-spacing: 0.03em;
+}
+
+.form-box h2::after {
+  content: "";
+  display: block;
+  width: 70px;
+  height: 5px;
+  background: linear-gradient(90deg, #00796b, #004d40);
+  margin-top: 10px;
+  border-radius: 4px;
+}
+
+/* Form Groups */
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 25px;
+}
+
+.form-group label {
+  margin-bottom: 8px;
+  font-size: 15px;
+  font-weight: 700;
+  color: #004d40;
+  letter-spacing: 0.09em;
+}
+
+.form-group input,
+.form-group textarea {
+  padding: 16px 18px;
+  border-radius: 14px;
+  border: 1.8px solid #b2dfdb;
+  font-size: 16px;
+  outline: none;
+  background: #f0f4f3;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  font-weight: 500;
+  color: #004d40;
+  resize: vertical;
+  min-height: 48px;
+}
+
+.form-group textarea {
+  min-height: 140px;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: #00796b;
+  background: #ffffff;
+  box-shadow: 0 0 0 5px rgba(0, 121, 107, 0.15);
+}
+
+/* Submit Button */
+.submit-btn {
+  padding: 18px;
+  width: 100%;
+  border: none;
+  border-radius: 16px;
+  background: linear-gradient(135deg, #00796b, #004d40);
+  color: #e0f2f1;
+  font-size: 18px;
+  font-weight: 800;
+  cursor: pointer;
+  box-shadow: 0 6px 15px rgba(0, 121, 107, 0.4);
+  transition: background 0.4s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.submit-btn:hover {
+  background: linear-gradient(135deg, #004d40, #00251a);
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 10px 25px rgba(0, 77, 64, 0.6);
+}
+
+/* Info Box */
+.info-box {
+  /* background: #ffffff; */
+  padding: 45px 40px;
+  /* border-radius: 20px; */
+  /* box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1); */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #004d40;
+}
+
+.info-box h2 {
+  font-size: 28px;
+  margin-bottom: 30px;
+  font-weight: 800;
+  position: relative;
+  letter-spacing: 0.03em;
+  color: #00796b;
+}
+
+.info-box h2::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 4px;
+  background: linear-gradient(90deg, #00796b, #004d40);
+  margin-top: 10px;
+  border-radius: 3px;
+}
+
+.info-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 25px;
+  gap: 18px;
+}
+
+.info-item i {
+  font-size: 24px;
+  color: #00796b;
+  flex-shrink: 0;
+  transition: color 0.3s ease;
+}
+
+.info-item i:hover {
+  color: #004d40;
+}
+
+.info-item p {
+  margin: 0;
+  font-size: 16px;
+  color: #00695c;
+  line-height: 1.7;
+  font-weight: 600;
+}
+
+/* Info Image */
+.info-img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+
+  margin-bottom: 30px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease;
+}
+
+.info-img:hover {
+  transform: scale(1.03);
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .contact-container {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .form-box,
+  .info-box {
+    padding: 35px 30px;
+  }
+
+  .info-img {
+    height: 180px;
+  }
+}
+
+@media (max-width: 600px) {
+  .form-box h2,
+  .info-box h2 {
+    font-size: 24px;
+  }
+
+  .submit-btn {
+    font-size: 16px;
+    padding: 16px;
+  }
+
+  .info-item i {
+    font-size: 20px;
+  }
+
+  .info-item p {
+    font-size: 14px;
+  }
+}

@@ -1,0 +1,259 @@
+/* ProductPageSkeleton.css */
+.skeleton-product-page {
+    padding: 1rem 2rem;
+    background: #f9f9f9;
+    min-height: 100vh;
+  }
+  
+  .skeleton-container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .skeleton-breadcrumb {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    margin-bottom: 2rem;
+    padding-top: 1rem;
+  }
+  
+  .skeleton-breadcrumb-item {
+    height: 14px;
+    background-color: #e9e9e9;
+    border-radius: 4px;
+  }
+  
+  .skeleton-breadcrumb-item:nth-child(1) {
+    width: 60px;
+  }
+  
+  .skeleton-breadcrumb-item:nth-child(2) {
+    width: 80px;
+  }
+  
+  .skeleton-breadcrumb-item:nth-child(3) {
+    width: 120px;
+  }
+  
+  .skeleton-main {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    background: white;
+    padding: 1.5rem;
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+  }
+  
+  /* Left side - Gallery */
+  .skeleton-gallery {
+    width: 100%;
+  }
+  
+  .skeleton-main-img {
+    width: 100%;
+    height: 300px;
+    background-color: #f0f0f0;
+    border-radius: 12px;
+    margin-bottom: 1rem;
+  }
+  
+  .skeleton-thumbnail-group {
+    display: flex;
+    gap: 0.75rem;
+    overflow-x: auto;
+    padding-bottom: 0.5rem;
+  }
+  
+  .skeleton-thumb {
+    min-width: 70px;
+    height: 70px;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    flex-shrink: 0;
+  }
+  
+  /* Right side - Info */
+  .skeleton-info {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+  }
+  
+  .skeleton-badge {
+    width: 80px;
+    height: 24px;
+    background-color: #f0f0f0;
+    border-radius: 12px;
+  }
+  
+  .skeleton-title-lg {
+    width: 90%;
+    height: 28px;
+    background-color: #f0f0f0;
+    border-radius: 6px;
+  }
+  
+  .skeleton-rating {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .skeleton-stars {
+    width: 120px;
+    height: 20px;
+    background-color: #f0f0f0;
+    border-radius: 4px;
+  }
+  
+  .skeleton-review-count {
+    width: 60px;
+    height: 20px;
+    background-color: #f0f0f0;
+    border-radius: 4px;
+  }
+  
+  .skeleton-price {
+    width: 120px;
+    height: 32px;
+    background-color: #f0f0f0;
+    border-radius: 6px;
+  }
+  
+  .skeleton-text-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    margin: 0.5rem 0;
+  }
+  
+  .skeleton-text {
+    width: 100%;
+    height: 16px;
+    background-color: #f0f0f0;
+    border-radius: 4px;
+  }
+  
+  .skeleton-text.short {
+    width: 70%;
+  }
+  
+  .skeleton-variant-selector,
+  .skeleton-quantity {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    margin-top: 0.5rem;
+  }
+  
+  .skeleton-label {
+    width: 80px;
+    height: 16px;
+    background-color: #f0f0f0;
+    border-radius: 4px;
+  }
+  
+  .skeleton-options-group {
+    display: flex;
+    gap: 0.75rem;
+  }
+  
+  .skeleton-option {
+    width: 50px;
+    height: 40px;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+  }
+  
+  .skeleton-quantity-selector {
+    width: 120px;
+    height: 40px;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+  }
+  
+  .skeleton-actions {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+  
+  .skeleton-button {
+    height: 48px;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+  }
+  
+  .skeleton-button.primary {
+    width: 180px;
+  }
+  
+  .skeleton-button.secondary {
+    width: 48px;
+  }
+  
+  .skeleton-extras {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    margin-top: 1rem;
+  }
+  
+  .skeleton-shipping,
+  .skeleton-guarantee {
+    height: 20px;
+    background-color: #f0f0f0;
+    border-radius: 4px;
+  }
+  
+  .skeleton-shipping {
+    width: 60%;
+  }
+  
+  .skeleton-guarantee {
+    width: 70%;
+  }
+  
+  /* Shimmer effect */
+  .shimmer {
+    background: linear-gradient(90deg, #f0f0f0 0%, #f8f8f8 50%, #f0f0f0 100%);
+    background-size: 200% 100%;
+    animation: shimmer 1.5s infinite;
+  }
+  
+  @keyframes shimmer {
+    0% {
+      background-position: -200% 0;
+    }
+    100% {
+      background-position: 200% 0;
+    }
+  }
+  
+  /* Responsive styles */
+  @media (min-width: 768px) {
+    .skeleton-product-page {
+      padding: 2rem;
+    }
+  
+    .skeleton-main {
+      flex-direction: row;
+      padding: 2rem;
+    }
+  
+    .skeleton-gallery {
+      width: 45%;
+    }
+  
+    .skeleton-main-img {
+      height: 400px;
+    }
+  
+    .skeleton-info {
+      flex: 1;
+      padding-left: 2rem;
+    }
+  }
+  

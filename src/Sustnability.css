@@ -1,0 +1,134 @@
+/* Base Styles */
+:root {
+  --teal-50: #f0fdfa;
+  --teal-100: #ccfbf1;
+  --teal-500: #14b8a6;
+  --teal-600: #0d9488;
+  --teal-700: #0f766e;
+  
+  --gray-50: #f9fafb;
+  --gray-100: #f3f4f6;
+  --gray-200: #e5e7eb;
+  --gray-600: #4b5563;
+  --gray-700: #374151;
+  --gray-800: #1f2937;
+  --gray-900: #111827;
+  
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.1);
+  --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  --shadow-md: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+/* Typography */
+body {
+
+  color: var(--gray-800);
+  line-height: 1.6;
+}
+
+h1, h2, h5, h6 {
+  font-weight: 700;
+  line-height: 1.2;
+  font-family: 'ROGBold';
+  margin-bottom: 1.5rem;
+}
+
+h1 { font-size: 2.5rem; }
+h2 { font-size: 2rem; }
+h3 { font-size: 1.5rem; }
+
+p {
+  margin-bottom: 1.5rem;
+  color: var(--gray-600);
+}
+
+/* Layout */
+.container {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* Buttons */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.75rem 1.5rem;
+  border-radius: 9999px;
+  font-weight: 500;
+  transition: all 0.2s ease;
+  text-align: center;
+  cursor: pointer;
+}
+
+.btn-primary {
+  background-color: var(--teal-600);
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: var(--teal-700);
+}
+
+.btn-outline {
+  border: 2px solid var(--teal-600);
+  color: var(--teal-600);
+  background: transparent;
+}
+
+.btn-outline:hover {
+  background-color: var(--teal-50);
+}
+
+/* Cards */
+.card {
+  background: white;
+  border-radius: 1rem;
+  box-shadow: var(--shadow);
+  overflow: hidden;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-md);
+}
+
+/* Utility Classes */
+.text-center { text-align: center; }
+.mb-1 { margin-bottom: 0.5rem; }
+.mb-2 { margin-bottom: 1rem; }
+.mb-4 { margin-bottom: 2rem; }
+.mb-8 { margin-bottom: 4rem;  justify-content: center; margin-top: 30px;}
+
+/* Responsive */
+@media (min-width: 768px) {
+  h1 { font-size: 3.5rem; }
+  h2 { font-size: 2.5rem; }
+  h3 { font-size: 1.75rem; }
+  
+  .container {
+    padding: 0 2rem;
+  }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--gray-100);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--teal-500);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--teal-600);
+}

@@ -1,0 +1,339 @@
+/* Gummy Product Slider Section */
+.gummy-slider-section {
+  width: 100%;
+  padding: 80px 20px;
+  background-color: #000000;
+}
+
+.gummy-slider-container {
+  max-width: 1600px;
+  margin: 0 auto;
+  padding-top: 20px;
+}
+
+.gummy-slider-title {
+  font-size: 48px;
+  font-weight: 700;
+  text-align: center;
+  color: white;
+  margin: 0 0 60px 0;
+  letter-spacing: 2px;
+  
+}
+
+.gummy-slider-wrapper {
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.gummy-slider-track {
+  display: flex;
+  gap: 30px;
+  transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  padding: 0 15px;
+}
+
+/* Card Styles */
+.gummy-card {
+ flex: 0 0 calc(25% - 22.5px);
+  min-width: 280px;
+  background-color: transparent;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+
+}
+
+.gummy-card:hover {
+    transform: translateY(-8px);
+  border-color: #33CCCC; /* Optional hover color */
+}
+.gummy-card-image-wrapper {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.gummy-card-image {
+  width: 100%;
+
+  display: block;
+  transition: transform 0.4s ease;
+}
+
+.gummy-card:hover .gummy-card-image {
+  transform: scale(1.05);
+}
+
+.gummy-card-content {
+  background-color: #ffffff;
+  padding: 25px 20px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  position: relative;
+  transition: all 0.3s ease;
+  min-height: 120px;
+}
+
+.gummy-card:hover .gummy-card-content {
+  background-color: #262626;
+}
+
+.gummy-card-accent-line {
+  width: 50px;
+  height: 3px;
+  background-color: #33CCCC;
+  margin-bottom: 15px;
+  transition: background-color 0.3s ease;
+}
+
+.gummy-card:hover .gummy-card-accent-line {
+  background-color: #ffffff;
+}
+
+.gummy-card-title {
+  font-size: 22px;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin: 0 0 8px 0;
+  letter-spacing: 0.5px;
+  transition: color 0.3s ease;
+ 
+}
+
+.gummy-card:hover .gummy-card-title {
+  color: #ffffff;
+}
+
+.gummy-card-subtitle {
+  font-size: 13px;
+  font-weight: 400;
+  color: #999999;
+  margin: 0;
+  letter-spacing: 1px;
+  transition: color 0.3s ease;
+  font-family: 'Arial', sans-serif;
+}
+
+.gummy-card:hover .gummy-card-subtitle {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+/* Slider Dots */
+.gummy-slider-dots {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  margin-top: 40px;
+}
+
+.gummy-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #d0d0d0;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  padding: 0;
+}
+
+.gummy-dot:hover {
+  background-color: #a0a0a0;
+  transform: scale(1.2);
+}
+
+.gummy-dot-active {
+  background-color: #FF6B35;
+  transform: scale(1.3);
+}
+
+/* Responsive Design */
+
+/* Large Tablets and Small Desktops (1024px to 1200px) */
+@media screen and (max-width: 1200px) {
+  .gummy-slider-container {
+    max-width: 1200px;
+  }
+  
+  .gummy-slider-title {
+    font-size: 42px;
+  }
+  
+  .gummy-card-image-wrapper {
+    height: 380px;
+  }
+}
+
+/* Tablets (768px to 1023px) - 3 cards */
+@media screen and (max-width: 1023px) {
+  .gummy-slider-track {
+    gap: 20px;
+  }
+  
+  .gummy-card {
+    flex: 0 0 calc(33.333% - 13.33px);
+    min-width: 250px;
+  }
+  
+  .gummy-slider-title {
+    font-size: 36px;
+    margin-bottom: 40px;
+  }
+  
+  .gummy-card-image-wrapper {
+    height: 350px;
+  }
+  
+  .gummy-card-content {
+    padding: 22px 18px;
+    min-height: 110px;
+  }
+  
+  .gummy-card-title {
+    font-size: 20px;
+  }
+}
+
+/* Small Tablets (600px to 767px) - 2 cards */
+@media screen and (max-width: 767px) {
+  .gummy-slider-section {
+    padding: 60px 15px;
+  }
+  
+  .gummy-slider-track {
+    gap: 15px;
+  }
+  
+  .gummy-card {
+    flex: 0 0 calc(50% - 7.5px);
+    min-width: 220px;
+  }
+  
+  .gummy-slider-title {
+    font-size: 32px;
+    margin-bottom: 35px;
+  }
+  
+  .gummy-card-image-wrapper {
+    height: 320px;
+  }
+  
+  .gummy-card-content {
+    padding: 20px 16px;
+    min-height: 100px;
+  }
+  
+  .gummy-card-title {
+    font-size: 18px;
+  }
+  
+  .gummy-card-subtitle {
+    font-size: 12px;
+  }
+}
+
+/* Mobile (480px to 599px) - 1 card centered */
+@media screen and (max-width: 599px) {
+  .gummy-slider-section {
+    padding: 50px 10px;
+  }
+  
+  .gummy-slider-wrapper {
+    overflow: hidden;
+  }
+  
+  .gummy-slider-track {
+    gap: 0;
+    padding: 0;
+    justify-content: flex-start;
+  }
+  
+  .gummy-card {
+    flex: 0 0 100%;
+    min-width: 100%;
+    max-width: none;
+  }
+  
+  .gummy-slider-title {
+    font-size: 28px;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+  }
+  
+  .gummy-card-image-wrapper {
+    height: 350px;
+  }
+  
+  .gummy-card-content {
+    padding: 20px 18px;
+    min-height: 95px;
+  }
+  
+  .gummy-card-title {
+    font-size: 18px;
+  }
+  
+  .gummy-card-subtitle {
+    font-size: 11px;
+  }
+  
+  .gummy-dot {
+    width: 10px;
+    height: 10px;
+  }
+}
+
+/* Extra Small Mobile (max 479px) */
+@media screen and (max-width: 479px) {
+  .gummy-slider-title {
+    font-size: 24px;
+    letter-spacing: 0.5px;
+  }
+  
+  .gummy-card-image-wrapper {
+    height: 300px;
+  }
+  
+  .gummy-card-content {
+    min-height: 90px;
+  }
+  
+  .gummy-card-title {
+    font-size: 16px;
+  }
+  
+  .gummy-card-subtitle {
+    font-size: 10px;
+  }
+}
+.price-container {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-family: 'Arial', sans-serif;
+}
+
+.price-label {
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.old-price {
+  text-decoration: line-through;
+  color: #999;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.new-price {
+  color: #d10000;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+
+
+
+
+
