@@ -1,19 +1,17 @@
 import React, { useState, useEffect, useRef } from "react";
-import Hls from "hls.js";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import AccordionItem from "./AccordionItem";
-import Header from "./Header";
 import NewFooter from "./NewFooter";
 import MissionHeader from "./MissionHeader";
 
 let faqs = require("./faqs.json");
 
-// Replace with your Cloudinary .m3u8 video URLs
+// Direct MP4 video URLs (no HLS needed)
 const DESKTOP_VIDEO_URL =
-  "https://res.cloudinary.com/ddoz8ya3l/video/upload/v1757483421/cpu2q2nw2hqz1sxv4tto_zf2piy.m3u8";
+  "https://res.cloudinary.com/dhofjux9o/video/upload/v1762522577/cpu2q2nw2hqz1sxv4tto_brmd8t.mp4";
 const MOBILE_VIDEO_URL =
-  "https://res.cloudinary.com/ddoz8ya3l/video/upload/v1757483412/wzndszlpi7gdabmjkqtg_phiybb.m3u8";
+  "https://res.cloudinary.com/dhofjux9o/video/upload/v1762841404/wzndszlpi7gdabmjkqtg_lyq1pc.mp4";
 
 const Accordionweb = () => {
   const [active, setActive] = useState(faqs[0].id);
@@ -28,17 +26,14 @@ const Accordionweb = () => {
   }, []);
 
   useEffect(() => {
-    if (Hls.isSupported()) {
-      if (desktopVideoRef.current) {
-        const hls = new Hls();
-        hls.loadSource(DESKTOP_VIDEO_URL);
-        hls.attachMedia(desktopVideoRef.current);
-      }
-      if (mobileVideoRef.current) {
-        const hls = new Hls();
-        hls.loadSource(MOBILE_VIDEO_URL);
-        hls.attachMedia(mobileVideoRef.current);
-      }
+    // Direct MP4 loading - no HLS needed
+    if (desktopVideoRef.current) {
+      desktopVideoRef.current.src = DESKTOP_VIDEO_URL;
+      desktopVideoRef.current.load();
+    }
+    if (mobileVideoRef.current) {
+      mobileVideoRef.current.src = MOBILE_VIDEO_URL;
+      mobileVideoRef.current.load();
     }
   }, []);
 
@@ -126,7 +121,7 @@ const Accordionweb = () => {
             <span className="hidden md:inline" style={{ fontSize: "5.8vw", fontFamily: "ROGBold" }}>
               Invest, Impact, Inspire
             </span>
-            <span className="md:hidden block leading-[100%]" style={{fontFamily: "ROGBold"}}>
+            <span className="md:hidden block leading-[100%]" style={{ fontFamily: "ROGBold" }}>
               <span className="block">Invest</span>
               <span className="block">Impact</span>
               <span className="block">Inspire</span>
@@ -146,7 +141,7 @@ const Accordionweb = () => {
             >
               Scalable, sustainable, and aligned with tomorrow’s health needs.
             </span>
-            <span className="md:hidden block" style={{fontFamily: "Minionpro"}}>
+            <span className="md:hidden block" style={{ fontFamily: "Minionpro" }}>
               Scalable, sustainable, and aligned with tomorrow’s health needs.
             </span>
           </p>
@@ -175,7 +170,7 @@ const Accordionweb = () => {
                   }}
                 >
                   <div className="card-body p-3">
-                    <h4 className="form-heading text-primary text-start text-[34px] mt-3 mb-8" style={{fontFamily: "ROGBold"}}>
+                    <h4 className="form-heading text-primary text-start text-[34px] mt-3 mb-8" style={{ fontFamily: "ROGBold" }}>
                       REPORTS
                     </h4>
                     {faqs.map((faq) => (
