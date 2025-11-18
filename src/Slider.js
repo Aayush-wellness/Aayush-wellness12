@@ -10,7 +10,8 @@ const Slider = () => {
       title: "",
       image: "https://cdn.shopify.com/s/files/1/0674/9614/9171/files/Artboard_5_Mobile_b.jpg?v=1763386069",
       desktopImage: "https://cdn.shopify.com/s/files/1/0674/9614/9171/files/Blinkit_AWL_Website_Banner_05-11-2025_B.jpg?v=1763386054", // Desktop image URL - replace tomorrow
-      buttonText: "SHOP NOW"
+      buttonText: "Read More",
+      link:"https://cdn.shopify.com/s/files/1/0674/9614/9171/files/Press_release_17.11.2025.pdf?v=1763377855"
     },
     {
       id: 2,
@@ -18,6 +19,7 @@ const Slider = () => {
       image: "https://cdn.shopify.com/s/files/1/0674/9614/9171/files/Artboard_1_Mobile.jpg?v=1762326373",
       desktopImage: "https://cdn.shopify.com/s/files/1/0674/9614/9171/files/Gummies_Website_Banner_04-11-2025_n.jpg?v=1762240729", // Desktop image URL - replace tomorrow
       buttonText: "SHOP NOW",
+      link:"https://store.aayushwellness.com/collections/all/products/dreamy-sleep-gummies-1"
     },
     {
       id: 3,
@@ -25,6 +27,7 @@ const Slider = () => {
       image: "https://cdn.shopify.com/s/files/1/0674/9614/9171/files/Artboard_2_Mobile.jpg?v=1762326361",
       desktopImage: "https://cdn.shopify.com/s/files/1/0674/9614/9171/files/Gummies_Website_Banner_04-11-2025_B.jpg?v=1762240729", // Desktop image URL - replace tomorrow
       buttonText: "SHOP NOW",
+      link:"https://store.aayushwellness.com/collections/all/products/beauty-vitamin-gummies-1"
     },
     {
       id: 4,
@@ -32,6 +35,7 @@ const Slider = () => {
       image: "https://cdn.shopify.com/s/files/1/0674/9614/9171/files/Artboard_4_Mobile.jpg?v=1762347166",
       desktopImage: "https://cdn.shopify.com/s/files/1/0674/9614/9171/files/Herbal_Website_Banner_05-11-2025_H_1.jpg?v=1762347166", // Desktop image URL - replace tomorrow
       buttonText: "SHOP NOW",
+      link:"https://store.aayushwellness.com/collections/all/products/aayush-herbal-pan-masala"
     },
     {
       id: 5,
@@ -39,6 +43,7 @@ const Slider = () => {
       image: "https://cdn.shopify.com/s/files/1/0674/9614/9171/files/Artboard_3_Mobile_3.jpg?v=1762429458",
       desktopImage: "https://cdn.shopify.com/s/files/1/0674/9614/9171/files/lab_Website_Banner_04-11-2025_L_3.jpg?v=1762429462", // Desktop image URL - replace tomorrow
       buttonText: "SHOP NOW",
+      link:"https://aayushlabs.com/"
     },
 
 
@@ -483,7 +488,7 @@ const Slider = () => {
                 </h1>
               </div>
            
-              <button className="shop-btn">{s.buttonText}</button>
+<a href={s.link} className="shop-btn" target="_blank" rel="noopener noreferrer">{s.buttonText}</a>
             </div>
           ))}
         </div>
