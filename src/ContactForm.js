@@ -1,30 +1,66 @@
-import React from "react";
+import React, { useState } from "react";
 import "./ContactForm.css";
 
 const ContactForm = () => {
+  const [result, setResult] = useState("");
+
+  const onSubmit = async (event) => {
+    event.preventDefault();
+    setResult("Sending....");
+    const formData = new FormData(event.target);
+    formData.append("access_key", "4958ad24-02e2-4681-8174-e998d6b3fc67");
+
+    try {
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        headers: {
+          "Accept": "application/json"
+        },
+        body: formData
+      });
+
+      const data = await response.json();
+
+      if (data.success) {
+        setResult("Form Submitted Successfully!");
+        event.target.reset();
+      } else {
+        setResult(data.message || "Something went wrong. Please try again.");
+      }
+    } catch (error) {
+      setResult("Failed to send message. Please try again later.");
+    }
+  };
+
   return (
     <section className="contact-section">
       <div className="contact-container">
         {/* Appointment Form */}
         <div className="form-box">
       
-          <form>
+          <form onSubmit={onSubmit}>
             <div className="form-group">
               <label>Name</label>
-              <input type="text" placeholder="Enter your name" required />
+              <input type="text" name="name" placeholder="Enter your name" required />
             </div>
 
             <div className="form-group">
               <label>Email Address</label>
-              <input type="email" placeholder="Enter your email" required />
+              <input type="email" name="email" placeholder="Enter your email" required />
             </div>
 
             <div className="form-group">
               <label>Address</label>
-              <textarea placeholder="Enter your address" rows="3" required></textarea>
+              <textarea name="address" placeholder="Enter your address" rows="3" required></textarea>
             </div>
 
             <button type="submit" className="submit-btn">Submit →</button>
+
+            {result && (
+              <div className={`form-result ${result.includes('Successfully') ? 'success' : 'error'}`}>
+                {result}
+              </div>
+            )}
           </form>
         </div>
 
