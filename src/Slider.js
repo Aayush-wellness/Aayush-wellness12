@@ -7,27 +7,34 @@ const Slider = () => {
   const slides = [
     {
       id: 1,
+      title: "",
+      image: "https://cdn.shopify.com/s/files/1/0674/9614/9171/files/Artboard_5_Mobile_b.jpg?v=1763386069",
+      desktopImage: "https://cdn.shopify.com/s/files/1/0674/9614/9171/files/Blinkit_AWL_Website_Banner_05-11-2025_B.jpg?v=1763386054", // Desktop image URL - replace tomorrow
+      buttonText: "SHOP NOW"
+    },
+    {
+      id: 2,
       title: "Exhausted? Meet Your Sleep Buddy ",
       image: "https://cdn.shopify.com/s/files/1/0674/9614/9171/files/Artboard_1_Mobile.jpg?v=1762326373",
       desktopImage: "https://cdn.shopify.com/s/files/1/0674/9614/9171/files/Gummies_Website_Banner_04-11-2025_n.jpg?v=1762240729", // Desktop image URL - replace tomorrow
       buttonText: "SHOP NOW",
     },
     {
-      id: 2,
+      id: 3,
       title: "Tired Skin? Try This ",
       image: "https://cdn.shopify.com/s/files/1/0674/9614/9171/files/Artboard_2_Mobile.jpg?v=1762326361",
       desktopImage: "https://cdn.shopify.com/s/files/1/0674/9614/9171/files/Gummies_Website_Banner_04-11-2025_B.jpg?v=1762240729", // Desktop image URL - replace tomorrow
       buttonText: "SHOP NOW",
     },
     {
-      id: 3,
+      id: 4,
       title: "Herbal in Every Bite",
       image: "https://cdn.shopify.com/s/files/1/0674/9614/9171/files/Artboard_4_Mobile.jpg?v=1762347166",
       desktopImage: "https://cdn.shopify.com/s/files/1/0674/9614/9171/files/Herbal_Website_Banner_05-11-2025_H_1.jpg?v=1762347166", // Desktop image URL - replace tomorrow
       buttonText: "SHOP NOW",
     },
- {
-      id: 4,
+    {
+      id: 5,
       title: " Your Doctor, Just a Click Away",
       image: "https://cdn.shopify.com/s/files/1/0674/9614/9171/files/Artboard_3_Mobile_3.jpg?v=1762429458",
       desktopImage: "https://cdn.shopify.com/s/files/1/0674/9614/9171/files/lab_Website_Banner_04-11-2025_L_3.jpg?v=1762429462", // Desktop image URL - replace tomorrow

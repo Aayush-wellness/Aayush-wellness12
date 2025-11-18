@@ -314,12 +314,12 @@ const NewFooter = () => {
           <div className="flex items-center justify-center gap-4 order-2 md:order-1 md:absolute md:left-1/2 md:transform md:-translate-x-1/2">
             <div className="relative group">
               <Link
-                to="#"
+                to="https://www.instagram.com/aayushwellness_/"
                 className=" rounded-full w-10 h-10 flex items-center justify-center hover:bg-opacity-80 transition-all"
               >
                 <Instagram size={20} className="text-white" />
               </Link>
-              <div className="absolute left-0 bottom-full mb-2 w-48 rounded-md shadow-lg bg-white/30 backdrop-blur-md ring-1 ring-black ring-opacity-10 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
+              {/* <div className="absolute left-0 bottom-full mb-2 w-48 rounded-md shadow-lg bg-white/30 backdrop-blur-md ring-1 ring-black ring-opacity-10 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
                 <div className="py-1" role="menu" aria-orientation="vertical">
                   <Link to="https://www.instagram.com/aayush.wellness/" className="block px-4 py-2 text-sm text-white font-semibold hover:underline hover:bg-green-800" role="menuitem">
                     Aayush Wellness
@@ -328,17 +328,17 @@ const NewFooter = () => {
                     Aayush Veda
                   </Link>
                 </div>
-              </div>
+              </div> */}
             </div>
 
             <div className="relative group">
               <Link
-                to="#"
+                to="https://www.facebook.com/people/AayushLife-by-Aayush-Wellness-Limited/61561583410258/"
                 className=" rounded-full w-10 h-10 flex items-center justify-center hover:bg-opacity-80 transition-all"
               >
                 <Facebook size={20} className="text-white" />
               </Link>
-              <div className="absolute left-0 bottom-full mb-2 w-48 rounded-md shadow-lg bg-white/30 backdrop-blur-md ring-1 ring-black ring-opacity-10 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
+              {/* <div className="absolute left-0 bottom-full mb-2 w-48 rounded-md shadow-lg bg-white/30 backdrop-blur-md ring-1 ring-black ring-opacity-10 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
                 <div className="py-1" role="menu" aria-orientation="vertical">
                   <Link to="https://www.facebook.com/profile.php?id=61561583410258" className="block px-4 py-2 text-sm text-white font-semibold hover:underline hover:bg-green-800" role="menuitem">
                     Aayush Wellness
@@ -347,7 +347,7 @@ const NewFooter = () => {
                     Aayush Veda
                   </Link>
                 </div>
-              </div>
+              </div> */}
             </div>
 
             <Link
