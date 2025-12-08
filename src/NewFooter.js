@@ -82,7 +82,7 @@ const NewFooter = () => {
           <div className="flex-1 min-w-[300px] mb-8 md:mb-0">
             <h2 className="mb-2 text-xxl font-semibold text-white">CONNECT WITH US</h2>
             <p className="mb-5 md:text-lg max-w-[600px] text-white text-lg">
-            Aayush wellness Limited <br />
+            Aayush Wellness Limited <br />
               <span className="font-bold">CIN:</span> L01122DL1984PLC018307{" "}
               <br />
               <span className="font-bold">Registered Office:</span> 275, Ground
