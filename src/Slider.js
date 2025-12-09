@@ -5,7 +5,17 @@ const Slider = () => {
   const wrapperRef = useRef(null);
 
   const slides = [
+        {
+      
+      id: 6,
+      title: "Your Everyday Shield for Stronger Immunity",
+      image: "https://cdn.shopify.com/s/files/1/0653/9830/9053/files/Banner_For_Mobile_08-12-2025.jpg?v=1765260465 ",
+      desktopImage: "https://cdn.shopify.com/s/files/1/0653/9830/9053/files/Immune_Care_web_Banner_08-12-2025.jpg?v=1765260466", // Desktop image URL - replace tomorrow
+      buttonText: "Read More",
+      link:"https://cdn.shopify.com/s/files/1/0653/9830/9053/files/Press_Release-06.12.2025.pdf?v=1765176620"
+    },
     {
+      
       id: 1,
       title: "",
       image: "https://cdn.shopify.com/s/files/1/0674/9614/9171/files/Artboard_5_Mobile_b.jpg?v=1763386069",
@@ -386,13 +396,16 @@ const Slider = () => {
             left: 50%;
             transform: translateX(-50%);
             text-align: center;
-            width: 190%;
+            width: 90%;
+            max-width: 100%;
           }
 
           .text-content h1 {
-            font-size: 42px;
-            line-height: 1.2;
+            font-size: 28px;
+            line-height: 1.3;
             margin-bottom: 40px;
+            word-wrap: break-word;
+            overflow-wrap: break-word;
           }
 
           .shop-btn {
@@ -460,6 +473,35 @@ const Slider = () => {
           .custom-arrow::after {
             width: 10px;
             height: 2px;
+          }
+        }
+
+        /* Extra small mobile devices */
+        @media (max-width: 480px) {
+          .text-content h1 {
+            font-size: 24px;
+            line-height: 1.3;
+          }
+
+          .shop-btn {
+            padding: 12px 24px;
+            font-size: 14px;
+          }
+        }
+
+        /* Small mobile devices */
+        @media (min-width: 481px) and (max-width: 640px) {
+          .text-content h1 {
+            font-size: 26px;
+            line-height: 1.3;
+          }
+        }
+
+        /* Medium mobile devices */
+        @media (min-width: 641px) and (max-width: 768px) {
+          .text-content h1 {
+            font-size: 30px;
+            line-height: 1.3;
           }
         }
           
