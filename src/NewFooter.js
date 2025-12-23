@@ -85,9 +85,7 @@ const NewFooter = () => {
             Aayush Wellness Limited <br />
               <span className="font-bold">CIN:</span> L01122DL1984PLC018307{" "}
               <br />
-              <span className="font-bold">Registered Office:</span> 275, Ground
-              Floor, West End Marg, Near Saket Metro Station Exit: 2, New
-              Delhi-110030
+              <span className="font-bold">Registered Office:</span>  B402, Takshashila, Samant Estate, Goregaon East, Mumbai – 400063
               <div className="flex flex-col md:flex-row md:items-center md:gap-2 mt-2">
                 <span>
                   <span className="font-bold">Contact no.:</span> +91 8655611700
