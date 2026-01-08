@@ -53,8 +53,8 @@ function MissionVision() {
 
 
   // Video URLs
-  const DESKTOP_VIDEO_URL = "https://res.cloudinary.com/dhofjux9o/video/upload/v1762842989/ur6urwkotb4kl7r4twfq_c4y2f9.mp4"
-  const MOBILE_VIDEO_URL = "https://res.cloudinary.com/dhofjux9o/video/upload/v1762843006/eb4kqbvu48fawrrfixap_c1yhw5.mp4"
+  const DESKTOP_VIDEO_URL = "https://res.cloudinary.com/dplvcwuhw/video/upload/v1767874445/ur6urwkotb4kl7r4twfq_yt6pje.mp4"
+  const MOBILE_VIDEO_URL = "https://res.cloudinary.com/dplvcwuhw/video/upload/v1767874503/eb4kqbvu48fawrrfixap_llq8oa.mp4"
 
   useEffect(() => {
     setTimeout(() => {

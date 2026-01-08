@@ -11,9 +11,9 @@ const NewFooter = () => {
   useEffect(() => {
     const handleResize = () => {
       if (window.innerWidth <= 768) {
-        setVideoSrc("https://res.cloudinary.com/dhofjux9o/video/upload/v1762522210/zyrxramkyunlff9ffpxd_tghiou.mp4")
+        setVideoSrc("https://res.cloudinary.com/dplvcwuhw/video/upload/v1767872198/zyrxramkyunlff9ffpxd_qilto5.mp4")
       } else {
-        setVideoSrc("https://res.cloudinary.com/dhofjux9o/video/upload/v1762521948/rnmwqvamasqxg9jgh7y3_tqfefz.mp4")
+        setVideoSrc("https://res.cloudinary.com/dplvcwuhw/video/upload/v1767871826/rnmwqvamasqxg9jgh7y3_gx75v0.mp4")
       }
     }
 
