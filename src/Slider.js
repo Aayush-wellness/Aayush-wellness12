@@ -96,7 +96,7 @@ const Slider = () => {
           
           overflow: hidden;
           position: relative;
-          margin-top: 90px;
+          margin-top: 100px;
         }
 
         .hero-wrapper {

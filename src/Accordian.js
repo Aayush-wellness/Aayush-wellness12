@@ -9,9 +9,9 @@ let faqs = require("./faqs.json");
 
 // Direct MP4 video URLs (no HLS needed)
 const DESKTOP_VIDEO_URL =
-  "https://res.cloudinary.com/dplvcwuhw/video/upload/v1767875589/cpu2q2nw2hqz1sxv4tto_g9dcxn.mp4";
+  "https://cdn.shopify.com/videos/c/o/v/0b6b75c1e9ce43cd9084bf125ae59868.mp4";
 const MOBILE_VIDEO_URL =
-  "https://res.cloudinary.com/dplvcwuhw/video/upload/v1767875523/wzndszlpi7gdabmjkqtg_tolytx.mp4";
+  "https://cdn.shopify.com/videos/c/o/v/90c87ebe093247e98013f53d92578a3f.mp4";
 
 const Accordionweb = () => {
   const [active, setActive] = useState(faqs[0].id);

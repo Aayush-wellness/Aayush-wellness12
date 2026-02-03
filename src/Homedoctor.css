@@ -555,6 +555,53 @@
     height:190vh;
   }
 
+  @media (max-width: 488px){
+    .homedoctor-container.blocks {
+      background-color: black;
+      height: auto;
+      min-height: 100vh;
+      padding-bottom: 2rem;
+    }
+    
+    /* Improve card layout on very small screens */
+    .gkoHKP {
+      padding: 0 10px;
+      gap: 0.5rem;
+    }
+    
+    /* Adjust card heights for better mobile experience */
+    .bpBxoP {
+      height: auto;
+      min-height: 28rem;
+      margin-bottom: 0.5rem;
+    }
+    
+    /* Reduce padding on mobile for better space utilization */
+    .dEcTFg {
+      padding: 1.5rem 1rem 0px;
+    }
+    
+    /* Ensure proper text sizing on small screens */
+    .feKJva {
+      font-size: 20px !important;
+      line-height: 1.2;
+    }
+    
+    .dJKpaf {
+      font-size: 14px !important;
+      line-height: 1.4;
+    }
+    
+    /* Adjust button styling for mobile */
+    .cAruRV.dOQfTS {
+      padding: 0.6rem 1.2rem;
+      font-size: 14px;
+      margin-top: 20px;
+    }
+  }
+    
+  
+
 
 
 
@@ -576,7 +623,7 @@
     /* Ensure proper stacking on mobile */
     .bpBxoP {
       height: auto;
-      min-height: 34.75rem;
+      min-height: 30rem;
       margin-bottom: 0.25rem;
     }
     
@@ -591,6 +638,39 @@
       padding: 2rem 1.5rem 0px;
     }
   }
+
+/* Additional responsive improvements for very small screens */
+@media (max-width: 360px) {
+  .homedoctor-container.blocks {
+    padding: 0;
+  }
+  
+  .gkoHKP {
+    padding: 0 8px;
+    gap: 0.25rem;
+  }
+  
+  .bpBxoP {
+    min-height: 26rem;
+  }
+  
+  .dEcTFg {
+    padding: 1.2rem 0.8rem 0px;
+  }
+  
+  .feKJva {
+    font-size: 18px !important;
+  }
+  
+  .dJKpaf {
+    font-size: 13px !important;
+  }
+  
+  .cAruRV.dOQfTS {
+    padding: 0.5rem 1rem;
+    font-size: 13px;
+  }
+}
   
   /* Preserve desktop layout */
   @media (min-width: 740px) {

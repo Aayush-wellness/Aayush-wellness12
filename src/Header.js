@@ -611,7 +611,7 @@ export default function AnimatedSlider() {
                         Partner with us for sustainable growth
                       </span>
                     </Link>
-                         <Link
+                         {/* <Link
                       to="/press-releases"
                       className="grid grid-cols-1 text-left py-2 text-black rounded-md !text-[#004037] hover:bg-[#004037] transition w-full hover:!text-white"
                     >
@@ -621,7 +621,7 @@ export default function AnimatedSlider() {
                       <span className="block text-sm px-4 text-gray-900 text-inherit">
                          Stay updated with our latest announcements and milestones
                       </span>
-                    </Link>
+                    </Link> */}
                   </div>
                 </div>
               </div>
@@ -711,7 +711,7 @@ export default function AnimatedSlider() {
     {/* Logo on the left */}
     <img
       className="h-15 w-36 "
-      src="https://aayushlife.com/cdn/shop/files/Aayush_Wellness_Limited_-_Logo_-_17-10-2024-02_240x.png?v=1729951951" 
+      src="https://cdn.shopify.com/s/files/1/0674/9614/9171/files/Aayush_Wellness_Limited_-_Logo_-_17-10-2024-02_-_png_2.png?v=1752667313" 
       alt="Logo"
     />
 
@@ -726,6 +726,7 @@ export default function AnimatedSlider() {
         alt="Close Menu"
       />
     </button>
+    
   </div>
 
           <div className="flex flex-col mt-10 px-6 overflow-y-auto h-full pb-20">

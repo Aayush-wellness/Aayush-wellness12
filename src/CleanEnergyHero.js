@@ -17,7 +17,7 @@ const CleanEnergyHero = () => {
     const video = videoRef.current;
     if (!video) return;
 
-    const videoSrc = "https://res.cloudinary.com/dplvcwuhw/video/upload/v1767873308/nidxfgeqigjs3ttwflv1_yshxgk.mp4";
+    const videoSrc = "https://cdn.shopify.com/videos/c/o/v/f45c91cc0ddd46ebb2ea3da8e7d82c31.mp4";
 
     // Direct MP4 loading (no HLS needed for MP4 files)
     video.src = videoSrc;
