@@ -88,7 +88,7 @@ const NewFooter = () => {
               <span className="font-bold">Registered Office:</span>  B402, Takshashila, Samant Estate, Goregaon East, Mumbai – 400063
               <div className="flex flex-col md:flex-row md:items-center md:gap-2 mt-2">
                 <span>
-                  <span className="font-bold">Contact no.:</span> +91 8655611700
+                  <span className="font-bold">Contact no.:</span> +91 8655980810
                 </span>
                 <span>
                   <span className="font-bold">Email:</span>{" "}

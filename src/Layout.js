@@ -18,12 +18,8 @@ function Layout() {
       <Header />
       <Sliding />
       <CleanEnergyHero />
-<GummyProductSlider />
+      <GummyProductSlider />
       <StackImage />
-    
-
-
-
       <AwCard />
       <AwCard2 />
       <Homedoctor />
