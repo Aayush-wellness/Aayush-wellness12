@@ -1147,7 +1147,7 @@ export default function AnimatedSlider() {
         </Link>
 
         <Link
-          to="/investor"
+          to="/investors"
           className="block px-4 py-3 text-[#004037] font-bold "
           onClick={() => setIsCorporateDropdownOpen(false)}
         >
