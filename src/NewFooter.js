@@ -11,9 +11,9 @@ const NewFooter = () => {
   useEffect(() => {
     const handleResize = () => {
       if (window.innerWidth <= 768) {
-        setVideoSrc("https://res.cloudinary.com/dplvcwuhw/video/upload/v1767872198/zyrxramkyunlff9ffpxd_qilto5.mp4")
+        setVideoSrc("https://cdn.shopify.com/videos/c/o/v/5853ac773d4e400fb4241eff6b588da5.mp4")
       } else {
-        setVideoSrc("https://res.cloudinary.com/dplvcwuhw/video/upload/v1767871826/rnmwqvamasqxg9jgh7y3_gx75v0.mp4")
+        setVideoSrc("https://cdn.shopify.com/videos/c/o/v/622417eb481c474985ca1492c4d7c521.mp4")
       }
     }
 
@@ -88,7 +88,7 @@ const NewFooter = () => {
               <span className="font-bold">Registered Office:</span>  B402, Takshashila, Samant Estate, Goregaon East, Mumbai – 400063
               <div className="flex flex-col md:flex-row md:items-center md:gap-2 mt-2">
                 <span>
-                  <span className="font-bold">Contact no.:</span> +91 8655611700
+                  <span className="font-bold">Contact no.:</span> +91 8655980810
                 </span>
                 <span>
                   <span className="font-bold">Email:</span>{" "}
