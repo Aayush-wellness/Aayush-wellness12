@@ -56,6 +56,34 @@
       }
     ]
   },
+
+  {
+    "id": 1234567,
+    "header": "Annual Returns",
+    "text": [
+      {
+        "id": 1,
+        "head": "Annual_Return_31_March_2023 ",
+        "link": "https://cdn.shopify.com/s/files/1/0653/9830/9053/files/Annual_Return_31_March_2023.pdf?v=1778307333"
+      },
+       {
+        "id": 2,
+        "head": "Annual_Return_31_March_2024",
+        "link": "https://cdn.shopify.com/s/files/1/0653/9830/9053/files/Annual_Return_31_March_2024.pdf?v=1778307334"
+      },
+       {
+        "id": 3,
+        "head": "Annual_Return_31_March_2025 ",
+        "link": "https://cdn.shopify.com/s/files/1/0653/9830/9053/files/Annual_Return_31_March_2025.pdf?v=1778307333"
+      }
+    ]
+  },
+
+
+
+
+  
+
   {
     "id": 2,
     "header": "BM Intimation",
@@ -1594,6 +1622,11 @@
         "id": 224,
         "head": "Press_Release_24.04.2026",
         "link": "https://cdn.shopify.com/s/files/1/0653/9830/9053/files/Press_Release_24.04.2026.pdf?v=1777098032"
+      },
+      {
+        "id": 225,
+        "head": "Press_Release_08.05.2026",
+        "link": "https://cdn.shopify.com/s/files/1/0653/9830/9053/files/Press_Release_08.05.2026.pdf?v=1778307835"
       }
     ]
   },
@@ -1603,98 +1636,88 @@
     "text": [
       {
         "id": 51,
-        "head": "Aayush_ESOP scheme_2024",
-        "link": "https://cdn.shopify.com/s/files/1/0674/9614/9171/files/Aayush_ESOP_scheme_2024.pdf?v=1724828462"
+        "head": "Policy_on_Nomination_Remuneration",
+        "link": "https://cdn.shopify.com/s/files/1/0653/9830/9053/files/Policy_on_Nomination_Remuneration.pdf?v=1778305453"
       },
       {
         "id": 52,
-        "head": "Code of Conduct for Prevention of Insider Trading",
-        "link": "https://cdn.shopify.com/s/files/1/0674/9614/9171/files/Code_of_Conduct_for_Prevention_of_Insider_Trading_5aba4569-89af-47c5-b5bc-fe73678fae5a.pdf?v=1728299257"
+        "head": "Policy_on_Prevention_of_Insider_Trading",
+        "link": "https://cdn.shopify.com/s/files/1/0653/9830/9053/files/Policy_on_Prevention_of_Insider_Trading.pdf?v=1778305452"
       },
       {
         "id": 53,
-        "head": "Code of Conduct of Board of Directors and Senior Management Personnel",
-        "link": "https://cdn.shopify.com/s/files/1/0674/9614/9171/files/Code_of_Conduct_of_Board_of_Directors_and_Senior_Management_Personnel_6579a66a-bd2d-42f2-861e-f8903484efd3.pdf?v=1728299257"
+        "head": "Policy_on_Board_Evaluation",
+        "link": "https://cdn.shopify.com/s/files/1/0653/9830/9053/files/Policy_on_Board_Evaluation.pdf?v=1778305452"
       },
       {
         "id": 54,
-        "head": "Familiarization Programs For Independent Directors",
-        "link": "https://cdn.shopify.com/s/files/1/0674/9614/9171/files/Familiarization_Programs_For_Independent_Directors_d0da2a86-252c-4701-a0db-d7128651562c.pdf?v=1728299257"
+        "head": "Policy_on_determining_Material_Subsidiaries",
+        "link": "https://cdn.shopify.com/s/files/1/0653/9830/9053/files/Policy_on_determining_Material_Subsidiaries.pdf?v=1778305452"
       },
       {
         "id": 55,
-        "head": "Nomination and Remuneration Policy",
-        "link": "https://cdn.shopify.com/s/files/1/0674/9614/9171/files/Nomination_and_Remuneration_Policy_b682beb8-96c8-4271-88d0-79085c3a09d8.pdf?v=1728300173"
+        "head": "Policy_on_Tax",
+        "link": "https://cdn.shopify.com/s/files/1/0653/9830/9053/files/Policy_on_Tax.pdf?v=1778305452"
       },
       {
         "id": 56,
-        "head": "Policy For Determination of Materiality of Events and Information",
-        "link": "https://cdn.shopify.com/s/files/1/0674/9614/9171/files/Policy_For_Determination_of_Materiality_of_Events_and_Information_60ec02cc-5004-4a2c-b418-08dd78ce466e.pdf?v=1728300164"
+        "head": "Policy_on_Terms_conditions_of_Appointment_of_Independent_Directors",
+        "link": "https://cdn.shopify.com/s/files/1/0653/9830/9053/files/Policy_on_Terms_conditions_of_Appointment_of_Independent_Directors.pdf?v=1778305453"
       },
       {
         "id": 57,
-        "head": "Policy on Materiality of and dealing with related party transactions",
-        "link": "https://cdn.shopify.com/s/files/1/0674/9614/9171/files/Policy_on_Materiality_of_and_dealing_with_related_party_transactions_657902b1-72ce-4bd0-a697-a2adb37a6f83.pdf?v=1728300164"
+        "head": "Policy_on_dealing_with_related_party_transactions",
+        "link": "https://cdn.shopify.com/s/files/1/0653/9830/9053/files/Policy_on_dealing_with_related_party_transactions.pdf?v=1778305452"
       },
       {
         "id": 58,
-        "head": "Policy on Prevention of Sexual Harrassment of women at workplace",
-        "link": "https://cdn.shopify.com/s/files/1/0674/9614/9171/files/Policy_on_Prevention_of_Sexual_Harrassment_of_women_at_workplace_cb38abc0-4ecd-452e-acdd-a4af87c2daca.pdf?v=1728300267"
+        "head": "Aayush_ESOP_scheme_2024",
+        "link": "https://cdn.shopify.com/s/files/1/0653/9830/9053/files/Aayush_ESOP_scheme_2024.pdf?v=1778305452"
       },
       {
         "id": 59,
-        "head": "Preservation of Documents and Archival Policy",
-        "link": "https://cdn.shopify.com/s/files/1/0674/9614/9171/files/Preservation_of_Documents_and_Archival_Policy_e12c495b-3123-4e84-8037-47d163fccc88.pdf?v=1728300267"
+        "head": "Policy_on_Prevention_of_Sexual_Harrassment_of_women_at_workplace",
+        "link": "https://cdn.shopify.com/s/files/1/0653/9830/9053/files/Policy_on_Prevention_of_Sexual_Harrassment_of_women_at_workplace.pdf?v=1778305452"
       },
       {
         "id": 60,
-        "head": "Terms & conditions of Appointment of Independent Directors",
-        "link": "https://cdn.shopify.com/s/files/1/0674/9614/9171/files/Terms_conditions_of_Appointment_of_Independent_Directors.docx.pdf?v=1728300267"
+        "head": "Policy_on_Code_of_Conduct_of_Board_of_Directors_and_Senior_Management_Personnel",
+        "link": "https://cdn.shopify.com/s/files/1/0653/9830/9053/files/Policy_on_Code_of_Conduct_of_Board_of_Directors_and_Senior_Management_Personnel.pdf?v=1778305452"
       },
       {
-        "id": 90,
-        "head": "Risk Management Policy",
-        "link": "https://cdn.shopify.com/s/files/1/0674/9614/9171/files/Risk_Management_Policy_87de7048-8522-4548-bb44-6d2957d3ac86.pdf?v=1728300267"
+        "id": 61,
+        "head": "Policy_on_Risk_Management",
+        "link": "https://cdn.shopify.com/s/files/1/0653/9830/9053/files/Policy_on_Risk_Management.pdf?v=1778305452"
       },
       {
-        "id": 94,
-        "head": "Vigil Mechanism Policy",
-        "link": "https://cdn.shopify.com/s/files/1/0674/9614/9171/files/Vigil_Mechanism_Policy_b80ffaf5-9342-441b-b676-f74299517ebd.pdf?v=1728300267"
+        "id": 62,
+        "head": "Policy_on_Vigil_Mechanism_Whistle_Blower",
+        "link": "https://cdn.shopify.com/s/files/1/0653/9830/9053/files/Policy_on_Vigil_Mechanism_Whistle_Blower.pdf?v=1778305452"
       },
       {
-        "id": 200,
-        "head": "Aayush Board Evaluation Policy",
-        "link": "https://cdn.shopify.com/s/files/1/0674/9614/9171/files/Aayush-Board_Evaluation_Policy.pdf?v=1732863486"
+        "id": 63,
+        "head": "Policy_on_Preservation_of_Documents_and_Archival",
+        "link": "https://cdn.shopify.com/s/files/1/0653/9830/9053/files/Policy_on_Preservation_of_Documents_and_Archival.pdf?v=1778305452"
       },
       {
-        "id": 201,
-        "head": "Aayush Code and Practices UPSI",
-        "link": "https://cdn.shopify.com/s/files/1/0674/9614/9171/files/Aayush-Code_and_Practices_UPSI.pdf?v=1732863486"
+        "id": 64,
+        "head": "Policy_For_Determination_of_Materiality_of_Events_and_Information",
+        "link": "https://cdn.shopify.com/s/files/1/0653/9830/9053/files/Policy_For_Determination_of_Materiality_of_Events_and_Information.pdf?v=1778305452"
       },
       {
-        "id": 202,
-        "head": "Aayush Tax Policy",
-        "link": "https://cdn.shopify.com/s/files/1/0674/9614/9171/files/Aayush-Tax_Policy.pdf?v=1732863486"
+        "id": 65,
+        "head": "Policy_on_Criteria_of_making_Payment_to_Non-Executive_Directors",
+        "link": "https://cdn.shopify.com/s/files/1/0653/9830/9053/files/Policy_on_Criteria_of_making_Payment_to_Non-Executive_Directors.pdf?v=1778305452"
       },
       {
-        "id": 204,
-        "head": "Aayush-Criteria of making Payment to Non-Executive Directors",
-        "link": "https://cdn.shopify.com/s/files/1/0674/9614/9171/files/Aayush-Criteria_of_making_Payment_to_Non-Executive_Directors.pdf?v=1762344959"
+        "id": 66,
+        "head": "Policy_on_Familiarization_Programme_for_IDs",
+        "link": "https://cdn.shopify.com/s/files/1/0653/9830/9053/files/Policy_on_Familiarization_Programme_for_IDs.pdf?v=1778305452"
       },
       {
-        "id": 205,
-        "head": "Aayush-Investor Grievances Redressal Policy",
-        "link": "https://cdn.shopify.com/s/files/1/0674/9614/9171/files/Aayush-Investor_Grievances_Redressal_Policy.pdf?v=1762344959"
-      },
-      {
-        "id": 206,
-        "head": "Aayush-Material Subsidiary Policy",
-        "link": "https://cdn.shopify.com/s/files/1/0674/9614/9171/files/Aayush-Material_Subsidiary_Policy.pdf?v=1762344963"
-      },
-      {
-        "id": 207,
-        "head": "Aayush-Policy on Appointment and Remuneration of Directors",
-        "link": "https://cdn.shopify.com/s/files/1/0674/9614/9171/files/Aayush-Policy_on_Appointment_and_Remuneration_of_Directors.pdf?v=1762344968"
+        "id": 67,
+        "head": "Policy_on_Appointment_and_Remuneration_of_Directors",
+        "link": "https://cdn.shopify.com/s/files/1/0653/9830/9053/files/Policy_on_Appointment_and_Remuneration_of_Directors.pdf?v=1778305452"
       }
     ]
   },
@@ -2830,6 +2853,11 @@
         "id": 1114,
         "head": "CGR Non Applicability March 2026",
         "link": "https://cdn.shopify.com/s/files/1/0674/9614/9171/files/CGR_Non_Applicability_March_2026.pdf?v=1777357868"
+      },
+      {
+        "id": 1115,
+        "head": "Initial_Disclosure_Non-applicability_as_Large_Corporate_FY_26",
+        "link": "https://cdn.shopify.com/s/files/1/0653/9830/9053/files/Initial_Disclosure_Non-applicability_as_Large_Corporate_FY_26.pdf?v=1778305096"
       }
     ]
   },
@@ -2883,20 +2911,14 @@
       {
         "id": 1,
         "head": "COMPOSITION OF BOARD OF DIRECTORS OF THE COMPANY",
-        "image": "https://cdn.shopify.com/s/files/1/0674/9614/9171/files/Capture.png?v=1762494744",
-        "type": "image"
+        "link": "https://cdn.shopify.com/s/files/1/0653/9830/9053/files/Brief_Profile_of_all_Directors.pdf?v=1778306956"
+        
       },
       {
         "id": 2,
-        "head": "COMPOSITION OF KEY MANEGERIAL PERSONNEL(S) OF THE COMPANY",
-        "image": "https://cdn.shopify.com/s/files/1/0674/9614/9171/files/Capture1.png?v=1762494947",
-        "type": "image"
-      },
-      {
-        "id": 3,
-        "head": "COMPOSITION OF COMMITTEES OF THE COMPANY",
-        "image": "https://cdn.shopify.com/s/files/1/0674/9614/9171/files/Capture6.png?v=1762495367",
-        "type": "image"
+        "head": "Composition_of_Committees_Terms_of_References",
+        "link": "https://cdn.shopify.com/s/files/1/0653/9830/9053/files/Composition_of_Committees_Terms_of_References.pdf?v=1778307158"
+        
       }
     ]
   },
