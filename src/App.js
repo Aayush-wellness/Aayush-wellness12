@@ -6,7 +6,7 @@ import PageTransition from "./PageTransition";
 import './index.css';
 import PageSkeleton from "./PageSkeleton";
 import { AuthProvider } from "./contexts/Authcontext";
-import FeatureModal from "./FeatureModal";
+// import FeatureModal from "./FeatureModal";
 
 // Regular import for homepage
 import Layout from "./Layout";
@@ -211,7 +211,7 @@ function App() {
     <Router>
       <AuthProvider>
         <InitializeCMS />
-        <FeatureModal />
+        {/* <FeatureModal /> */}
         <AnimatedRoutes />
       </AuthProvider>
     </Router>
